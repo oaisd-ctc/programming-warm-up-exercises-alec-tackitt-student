@@ -14,7 +14,7 @@ namespace NoviceChallenges
         //    System.Console.WriteLine(StartsHello("Hello World"));
         //    System.Console.WriteLine(ReverseString("Hello World"));
         //    System.Console.WriteLine(Factorial(7));
-        //    System.Console.WriteLine(IsPrime(89712975));
+           System.Console.WriteLine(IsPrime(7));
         //    System.Console.WriteLine(Fibonacci(12));
         //    System.Console.WriteLine(LargestInArray(array));
         //    System.Console.WriteLine(IsPalindrome("Racecar"));
@@ -102,7 +102,7 @@ namespace NoviceChallenges
             if (number <= 1) return false;
            
             //start at 1 below given int, if no remaider from divison, return false (not prime), if gets down to 1, return true
-            for(int i = number -1; i >= 0; i--){
+            for(int i = number -1; i > 1 ; i--){
                 if(number % i == 0){
                 return false;
                 }
