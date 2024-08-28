@@ -14,7 +14,7 @@ namespace NoviceChallenges
         //    System.Console.WriteLine(StartsHello("Hello World"));
         //    System.Console.WriteLine(ReverseString("Hello World"));
         //    System.Console.WriteLine(Factorial(7));
-        //    System.Console.WriteLine(IsPrime(7));
+        //    System.Console.WriteLine(IsPrime(89712975));
         //    System.Console.WriteLine(Fibonacci(12));
         //    System.Console.WriteLine(LargestInArray(array));
         //    System.Console.WriteLine(IsPalindrome("Racecar"));
@@ -27,7 +27,7 @@ namespace NoviceChallenges
         // 1. Return the sum of two numbers.
         public static int Add(int a, int b)
         {
-          
+            // adding two given numbers
             int num = a + b;
             return num;
         }
@@ -35,8 +35,9 @@ namespace NoviceChallenges
         // 2. Given an integer, return true if it's even, else return false.
         public static bool IsEven(int number)
         {
-           
+           // calculating remainder of given number divided by 2
             int num = number % 2;
+            //if there isn't a remainder, given number is even, else it is odd
             if (num == 0){
                 return true;
             }
@@ -49,8 +50,7 @@ namespace NoviceChallenges
         // 3. Return the largest of three numbers.
         public static int MaxOfThree(int a, int b, int c)
         {
-            // HINT: You might want to use Math.Max function.
-          
+            // method to find max of 2 numbers, then max of the third against the max of other 2
             int num = Math.Max(a,Math.Max(b,c));
             return num;
         }
@@ -58,7 +58,7 @@ namespace NoviceChallenges
         // 4. Return the length of the given string.
         public static int StringLength(string s)
         {
-           
+            //finding length of given string
             int num = s.Length;
             return num;
         }
@@ -66,7 +66,7 @@ namespace NoviceChallenges
         // 5. Return true if the string starts with "Hello", otherwise return false.
         public static bool StartsHello(string s)
         {
-        
+            //method to check if given string starts with Hello
             bool starts = s.StartsWith("Hello");
             return starts;
         }
@@ -100,14 +100,16 @@ namespace NoviceChallenges
         {
 
             if (number <= 1) return false;
+           
             //start at 1 below given int, if no remaider from divison, return false (not prime), if gets down to 1, return true
             for(int i = number -1; i >= 0; i--){
-                if(number % i == 0) { return false;}
-                else {return true;}
-                
+                if(number % i == 0){
+                return false;
+                }
+                else {
+                }
             }
-           
-            return false;
+            return true;
         }
 
         // 9. Return the nth Fibonacci number.
